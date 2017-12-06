@@ -30,7 +30,7 @@ public class Base {
                     maONUM = i;} //запоминаем номер в массиве
             }
         }
-        System.out.println("Min+="+miP+"  Max-="+ma0); //Вывод найденных значений
+        System.out.println("Min+="+miP+"  Max-="+ma0); ///Вывод найденных значений
         aRRay[maONUM ] = miP;
         aRRay[miPNUM] = ma0;//переопределение элементов
         for (int i = 0; i<20; i++ ) {//Цикл вывода измененного массива
