@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 /**
+ * @author A. O. U. 4 Aplana
  * Created by Obscur on 06.12.17.
+ * @version 1.1
  */
 public class Base {
     public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class Base {
             System.out.println("Array " + (i) + " is " + aRRay[i]);
             //Заполнение массива
         }
-        int ma0 = -1;
+        int ma0 = -1;//Инициализируем переменные
         int miP = 10;
         int miPNUM = 0;
         int maONUM = 0;
@@ -30,7 +32,7 @@ public class Base {
                     maONUM = i;} //запоминаем номер в массиве
             }
         }
-        System.out.println("Min+="+miP+"  Max-="+ma0); ///Вывод найденных значений
+       System.out.println("Min+="+miP+"  Max-="+ma0); ///Вывод найденных значений
         aRRay[maONUM ] = miP;
         aRRay[miPNUM] = ma0;//переопределение элементов
         for (int i = 0; i<20; i++ ) {//Цикл вывода измененного массива
