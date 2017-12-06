@@ -8,6 +8,7 @@ public class Base {
         Scanner in = new Scanner(System.in);
         Integer[] aRRay = new Integer[20];
         //Инициализация массива
+
         for (int i = 0; i<20; i++ ) {
             aRRay[i] = -10 + (int) (Math.random() * 20);
             System.out.println("Array " + (i) + " is " + aRRay[i]);
@@ -29,6 +30,15 @@ public class Base {
                     maONUM = i;} //запоминаем номер в массиве
             }
         }
-        System.out.println(maONUM+"Max- = "+aRRay[maONUM]+miPNUM+"  Min+ = "+aRRay[miPNUM]);
+        System.out.println("Min+="+miP+"  Max-="+ma0); //Вывод найденных значений
+        aRRay[maONUM ] = miP;
+        aRRay[miPNUM] = ma0;//переопределение элементов
+        for (int i = 0; i<20; i++ ) {//Цикл вывода измененного массива
+            if (i == miPNUM)
+                System.out.println("Array " + (i) + " is " + aRRay[i]+" Changed Min+ -> Max-");
+            else if (i == maONUM)
+                System.out.println("Array " + (i) + " is " + aRRay[i]+" Changed Max- -> Min+");
+            else System.out.println("Array " + (i) + " is " + aRRay[i]);
+        }
     }
 }
